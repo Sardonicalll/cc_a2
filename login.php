@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-<title>Login</title>
-<body>
-<form action="#" method="get">
-Username: <input type="string" name="Username"><br>
-Password: <input type="string" name="Password"><br>
-</body>
-<?php
+    <title>Login</title>
+    <body>
+        // Login form
+        // Form action and method to be added
+        <form action="#" method="#">
+            Username: <input type="string" name="username"><br>
+            Password: <input type="string" name="password"><br>
+    </body>
+    <?php
 
-?>
+    ?>
 </html>
