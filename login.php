@@ -7,6 +7,7 @@
         <form action="#" method="#">
             Username: <input type="string" name="username"><br>
             Password: <input type="string" name="password"><br>
+        </form>
     </body>
     <?php
 
