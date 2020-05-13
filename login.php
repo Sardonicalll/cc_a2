@@ -5,17 +5,8 @@
     <!-- Header -->
 <header>
     <h1>
-        Welcome to A Cloud Game
-        <br>
-        A Cloud Computing Assignment 2 
+        A Cloud Game
     </h1>
-    <p>
-        Created by:
-        <br>
-        Caleb McCash | s3717184
-        <br>
-        De Yie Lu | s3700032
-    </p>
 </header>
     <!-- Body -->
 <body>
@@ -34,7 +25,23 @@
         <br>
         <input type="submit" value="Log In">
     </form>
+    <!-- Signup Button -->
+    or
+    <br>
+    <input type="button" value="Create an Account" class="registerbtn" id="registerbtn" onClick="#"/>
 </body>
+    <!-- Footer -->
+<footer>
+    <p>
+        A Cloud Computing Assignment 2
+        <br>
+        Created by:
+        <br>
+        Caleb McCash | s3717184
+        <br>
+        De Yie Lu | s3700032
+    </p>
+</footer>
 <?php
 
 ?>
