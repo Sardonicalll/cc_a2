@@ -1,50 +1,34 @@
 <!DOCTYPE html>
 <html>
     <!-- Tab Title -->
-<title>Register</title>
+<title>Cloud Battle Arena</title>
     <!-- Head containing stylesheet link -->
 <head>
-    <link rel="indexSS" href="indexstyles.css">
+    <link rel="indexSS" href="css/indexstyles.css">
 </head>
     <!-- Header -->
 <header>
     <h1>
-        Create an Account
+        Welcome to Cloud Battle Arena
     </h1>
 </header>
     <!-- Body -->
 <body>
-    <!-- Registration Form -->
-    <form method="post">
-        <input type="key" id="username" name="username" placeholder="Username">
-        <br>
-        <input type="key" id="email" name="email" placeholder="E-mail">
-        <br>
-        <input type="integer" id="password" name="password" placeholder="Password">
-        <br>
-        <input type="integer" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password">
-        <br><br>
-        <input type="submit" value="Create Account">
-    </form>
-    <!-- Return to Login Button -->
-    <br>
-    Already have an account?
-    <br>
-    <input type="button" value="Return to Login Page" class="returnbtn" id="returnbtn" onClick="#"/>
-    <br><br>
-</body>
-    <!-- Footer -->
-<footer>
     <p>
         A Cloud Computing Assignment 2
-        <br>
+        <br><br>
         Created by:
         <br>
         Caleb McCash | s3717184
         <br>
         De Yie Lu | s3700032
     </p>
-</footer>
+    <br>
+    <input type="button" value="Login" class="tologinbtn" id="tologinbtn" onClick="#"/>
+    <br><br>
+    <input type="button" value="About Us" class="aboutusbtn" id="aboutusbtn" onClick="#"/>
+    <br>
+</body>
 <?php
 
 ?>
