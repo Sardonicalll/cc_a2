@@ -59,10 +59,6 @@ body {
     background-color: #000000;
 }
 
-h2 {
-	color: #FFFFFF;
-}
-
 a {
 	background-color: #000000;
     border: 2px solid #1ad33d;

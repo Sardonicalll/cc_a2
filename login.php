@@ -6,17 +6,14 @@
 <head>
     <link rel="loginSS" href="css/loginstyles.css">
 </head>
-    <!-- Heaader -->
+    <!-- Header -->
 <header>
     <h1>
-        Cloud Battle Arena
+        Login
     </h1>
 </header>
     <!-- Body -->
 <body>
-    <h2>
-        Login
-    </h2>
     <!-- Login Form -->
     <form method="post">
         <input type="key" id="username" name="username" placeholder="Username">
@@ -26,8 +23,9 @@
         <input type="submit" value="Log In">
     </form>
     <!-- Signup Button -->
-    OR
     <br>
+    OR
+    <br><br>
     <a class="registerbtn" href="https://cloudcomp-a2.ts.r.appspot.com/register">Create an Account</a>
     <br><br>
 </body>
@@ -55,10 +53,6 @@ body {
     text-align: center;
     color: #DDD;
     background-color: #000000;
-}
-
-h2 {
-	color: #FFFFFF;
 }
 
 a {
