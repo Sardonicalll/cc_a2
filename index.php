@@ -29,6 +29,31 @@
     <input type="button" value="About Us" class="aboutusbtn" id="aboutusbtn" onClick="#"/>
     <br>
 </body>
+<!-- Stylesheet -->
+<style>
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    margin: 0;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    color: #DDD;
+    background-color: #000000;
+}
+
+input[type=button] {
+	background-color: #000000;
+    border: 2px solid #1ad33d;
+    color: white;
+    padding: 8px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+</style>
 <?php
 
 ?>

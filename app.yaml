@@ -4,8 +4,15 @@ threadsafe: true
 
 handlers:
 
-- url: /css
-  static_dir: css
-
-- url: /.*
+- url: /
   script: index.php
+
+- url: /login
+  script: login.php
+
+- url: /register
+  script: register.php
+
+- url: /main
+  script: main.php
+
