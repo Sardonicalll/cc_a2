@@ -43,7 +43,6 @@ input[type=submit] {
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
-  width: 24%;
 }
 
 input[type=button] {
@@ -55,13 +54,16 @@ input[type=button] {
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
-  width: 24%;
 }
 
 footer {
-    background-color: #333333;
+    background-color: #333;
     padding: 14px 16px;
-    color: #DDD;
+    color: #FFFFFF;
     text-align: center;
     font-size: 12px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }

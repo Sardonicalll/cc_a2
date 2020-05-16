@@ -29,7 +29,7 @@
     <!-- Return to Login Button -->
     <br>
     Already have an account?
-    <br>
+    <br><br>
     <input type="button" value="Return to Login Page" class="returnbtn" id="returnbtn" onClick="#"/>
     <br><br>
 </body>
