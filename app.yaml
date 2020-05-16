@@ -1,5 +1,6 @@
 runtime: php55
 api_version: 1
+threadsafe: true
 
 handlers:
 - url: /
@@ -13,3 +14,12 @@ handlers:
 
 - url: /main
   script: main.php
+
+- url: /indexSS
+  static_dir: indexstyles.css
+
+- url: /loginSS
+  static_dir: loginstyles.css
+
+- url: /mainSS
+  static_dir: mainstyles.css

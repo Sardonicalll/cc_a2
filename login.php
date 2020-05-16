@@ -4,7 +4,7 @@
 <title>Login</title>
     <!-- Head containing stylesheet link -->
 <head>
-    <link rel="stylesheet" href="loginstyles.css">
+    <link rel="loginSS" href="loginstyles.css">
 </head>
     <!-- Heaader -->
 <header>

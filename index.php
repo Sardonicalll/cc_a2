@@ -4,7 +4,7 @@
 <title>Register</title>
     <!-- Head containing stylesheet link -->
 <head>
-    <link rel="stylesheet" href="loginstyles.css">
+    <link rel="indexSS" href="indexstyles.css">
 </head>
     <!-- Header -->
 <header>

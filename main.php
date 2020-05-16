@@ -4,7 +4,7 @@
 <title>Main</title>
     <!-- Head containing stylesheet link -->
 <head>
-    <link rel="stylesheet" href="mainstyles.css">
+    <link rel="mainSS" href="mainstyles.css">
 </head>
     <!-- Navigation Menu -->
 <nav>
