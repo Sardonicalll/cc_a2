@@ -3,23 +3,9 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /
+
+- url: /css
+  static_dir: css
+
+- url: /.*
   script: index.php
-
-- url: /login
-  script: login.php
-
-- url: /register
-  script: register.php
-
-- url: /main
-  script: main.php
-
-- url: /indexSS
-  static_dir: indexstyles.css
-
-- url: /loginSS
-  static_dir: loginstyles.css
-
-- url: /mainSS
-  static_dir: mainstyles.css
