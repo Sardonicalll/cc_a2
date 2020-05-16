@@ -69,7 +69,7 @@ input[type=key] {
     padding: 12px 20px;
     font-size: 15px;
     color: #DDD;
-    background-color: #111111;
+    background-color: #000000;
 }
 
 input[type=integer] {
@@ -78,7 +78,7 @@ input[type=integer] {
     padding: 12px 20px;
     font-size: 15px;
     color: #DDD;
-    background-color: #111111;
+    background-color: #000000;
 }
 
 input[type=submit] {
