@@ -1,2 +1,15 @@
-runtime: php72
+runtime: php55
 api_version: 1
+
+handlers:
+- url: /
+  script: index.php
+
+- url: /login
+  script: login.php
+
+- url: /register
+  script: register.php
+
+- url: /main
+  script: main.php
