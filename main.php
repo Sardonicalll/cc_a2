@@ -2,6 +2,10 @@
 <html>
     <!-- Tab Title -->
 <title>Main</title>
+    <!-- Head containing stylesheet link -->
+<head>
+    <link rel="stylesheet" href="mainstyles.css">
+</head>
     <!-- Navigation Menu -->
 <nav>
     <div class="topnav">
@@ -31,45 +35,6 @@
         De Yie Lu | s3700032
     </p>
 </footer>
-    <!-- Style -->
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  color: #ddd;
-  text-align: center;
-  padding: 12px 14px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ccc;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #8900BF;
-  color: white;
-}
-
-footer {
-    background-color: #333;
-    padding: 14px 16px;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 12px;
-}
-</style>
 <?php
 
 ?>
