@@ -30,7 +30,7 @@
     <br>
     Already have an account?
     <br><br>
-    <a class="registerbtn" href="https://cloudcomp-a2.ts.r.appspot.com/register">Return to Login Page</a>
+    <a class="registerbtn" href="https://cloudcomp-a2.ts.r.appspot.com/login">Return to Login Page</a>
     <br><br>
 </body>
     <!-- Footer -->
