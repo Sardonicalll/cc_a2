@@ -28,7 +28,7 @@
     <!-- Signup Button -->
     OR
     <br>
-    <input type="button" value="Create an Account" class="registerbtn" id="registerbtn" onClick="#"/>
+    <a class="registerbtn" href="https://cloudcomp-a2.ts.r.appspot.com/register">Create an Account</a>
     <br><br>
 </body>
     <!-- Footer -->
@@ -59,6 +59,18 @@ body {
 
 h2 {
 	color: #FFFFFF;
+}
+
+a {
+	background-color: #000000;
+    border: 2px solid #1ad33d;
+    color: white;
+    padding: 8px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: helvetica;
 }
 
 input[type=key] {

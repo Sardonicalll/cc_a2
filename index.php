@@ -24,15 +24,25 @@
         De Yie Lu | s3700032
     </p>
     <br>
-    <input type="button" value="Login" class="tologinbtn" id="tologinbtn" onClick="#"/>
-    <br><br>
-    <input type="button" value="About Us" class="aboutusbtn" id="aboutusbtn" onClick="#"/>
+    <a class="loginbtn" href="https://cloudcomp-a2.ts.r.appspot.com/login">Proceed to Login</a>
     <br>
 </body>
 <!-- Stylesheet -->
 <style>
 h1 {
     font-family: "Times New Roman", Times, serif;
+}
+
+a {
+	background-color: #000000;
+    border: 2px solid #1ad33d;
+    color: white;
+    padding: 8px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: helvetica;
 }
 
 body {
