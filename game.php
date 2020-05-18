@@ -9,7 +9,7 @@
     <!-- Navigation Menu -->
 <nav>
     <div class="topnav">
-        <a class="active" href="https://cloudcomp-a2.ts.r.appspot.com/main">Home</a>
+        <a href="https://cloudcomp-a2.ts.r.appspot.com/main">Home</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/account">My Account</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/about">About</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/stats">Statistics</a>
@@ -22,17 +22,7 @@
 </header>
     <!-- Body -->
 <body>
-    <p>
-        Welcome to Cloud Battle Arena! A turn based RPG game which battles various cloud services.
-    </p>
-    <h3>
-        Latest Updates
-    </h3>
-	<p>
-    	Fire Cloud, Grass Cloud and Water Cloud has been added into the game.
-    </p>
-    <br><br>
-    <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/game">Battle Now!</a>
+
 </body>
     <!-- Footer -->
 <footer>
@@ -51,20 +41,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
   }
-  
-a[class=gamebtn] {
-	background-color: #000000;
-    border: 2px solid #8900BF;
-    color: white;
-    padding: 8px 28px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 28px;
-    font-family: helvetica;
-}
   
 .topnav {
     overflow: hidden;
@@ -83,11 +60,6 @@ a[class=gamebtn] {
 .topnav a:hover {
     background-color: #ccc;
     color: black;
-  }
-  
-.topnav a.active {
-    background-color: #8900BF;
-    color: white;
   }
   
 footer {
