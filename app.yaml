@@ -16,3 +16,11 @@ handlers:
 - url: /main
   script: main.php
 
+- url: /game
+  script: game.php
+
+- url: /account
+  script: account.php
+
+- url: /selection
+  script: selection.php
