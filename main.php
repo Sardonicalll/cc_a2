@@ -22,6 +22,7 @@
 </header>
     <!-- Body -->
 <body>
+
     <p>
         Welcome to Cloud Battle Arena! A turn based RPG game which battles various cloud services.
     </p>
@@ -32,7 +33,7 @@
     	Fire Cloud, Grass Cloud and Water Cloud has been added into the game.
     </p>
     <br><br>
-    <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/game">Battle Now!</a>
+    <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/selection">Battle Now!</a>
 </body>
     <!-- Footer -->
 <footer>
