@@ -89,20 +89,9 @@ if (array_key_exists('uid', $_POST)) {
     }
 }
 
-
 if ($idcorrect == true and $pwordcorrect == true) {
 }
-
-
-
-
 ?>
-
-
-
-
-
-
 
 <!DOCTYPE html>
 <html>
@@ -122,9 +111,9 @@ if ($idcorrect == true and $pwordcorrect == true) {
 <body>
     <!-- Login Form -->
     <form method="post">
-        <input type="key" id="username" name="username" placeholder="Username">
+        <input type="text" id="uid" name="uid" placeholder="Username">
         <br>
-        <input type="integer" id="password" name="password" placeholder="Password">
+        <input type="text" id="pword" name="pword" placeholder="Password">
         <br><br>
         <input type="submit" value="Log In">
     </form>
@@ -173,16 +162,7 @@ a {
     font-family: helvetica;
 }
 
-input[type=key] {
-	border: none;
-    border-bottom: 2px solid #1ad33d;
-    padding: 12px 20px;
-    font-size: 15px;
-    color: #DDD;
-    background-color: #000000;
-}
-
-input[type=integer] {
+input[type=text] {
 	border: none;
     border-bottom: 2px solid #1ad33d;
     padding: 12px 20px;

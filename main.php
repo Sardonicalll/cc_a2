@@ -13,7 +13,7 @@
         <a href="https://cloudcomp-a2.ts.r.appspot.com/account">My Account</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/about">About</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/stats">Statistics</a>
-        <a href="https://cloudcomp-a2.ts.r.appspot.com/login">Logout</a>
+        <a href="https://cloudcomp-a2.ts.r.appspot.com/">Logout</a>
     </div>
 </nav>
     <!-- Header -->
