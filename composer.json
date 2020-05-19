@@ -1,0 +1,7 @@
+{
+    "require": {
+        "google/cloud": "^0.72"
+    }
+
+    
+}

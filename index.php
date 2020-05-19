@@ -1,3 +1,44 @@
+<?php
+
+session_start();
+
+putenv('PLACEHOLDER');
+
+# Includes the autoloader for libraries installed with composer
+require __DIR__ . '/vendor/autoload.php';
+
+# Imports the Google Cloud client library
+use Google\Cloud\Datastore\DatastoreClient;
+
+# Your Google Cloud Platform project ID
+$projectId = 'PLACEHOLDER';
+
+# Instantiates a client
+$datastore = new DatastoreClient([
+    'projectId' => $projectId
+]);
+
+$idcorrect = false;
+$pwordcorrect = false;
+$uid;
+$pword;
+
+$id1 = $datastore->key(user, 's3717184');
+$id2 = $datastore->key(user, 's37171841');
+$id3 = $datastore->key(user, 's37171842');
+
+$u1 = $datastore->lookup($id1);
+$u2 = $datastore->lookup($id2);
+$u3 = $datastore->lookup($id3);
+//echo $u1['name'] . "   " . $u2['name'] . "   " . $u3['name'];
+
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html>
     <!-- Tab Title -->
@@ -64,7 +105,5 @@ input[type=button] {
     font-size: 18px;
 }
 </style>
-<?php
 
-?>
 </html>
