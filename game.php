@@ -2,10 +2,10 @@
 <body onload="hide()">
 <!-- On the creation of the page, start the game canvas-->
 <canvas id="ctx" width="500" height="500" style="border:1px Solid #000000;"></canvas>
-<img id="b" src="sky.jpg" alt="background" width="500" height="500"> </img>
-<img id="f" src="Fire-Cloud.png" alt="background" width="500" height="500"> </img>
-<img id="w" src="Water-Cloud.png" alt="background" width="500" height="500"> </img>
-<img id="g" src="Grass-Cloud.png" alt="background" width="500" height="500"> </img>
+<img id="b" src="https://i.ibb.co/2j095Yk/Sky.jpg" alt="background" width="500" height="500"> </img>
+<img id="f" src="https://i.ibb.co/jvcncWy/Grass-Cloud.png" alt="background" width="500" height="500"> </img>
+<img id="w" src="https://i.ibb.co/jvcncWy/Grass-Cloud.png" alt="background" width="500" height="500"> </img>
+<img id="g" src="https://i.ibb.co/jvcncWy/Grass-Cloud.png" alt="background" width="500" height="500"> </img>
 
 <script>
 hide = function(){
