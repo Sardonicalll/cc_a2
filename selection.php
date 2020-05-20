@@ -27,49 +27,50 @@
     </h3>
     <div class="clouds">
     	<div>
-    	<br>
-            <!-- Image doesn't work. Either wrong src or app.yaml requires work -->
-        	<img src="Grass_Cloud.png" alt="grass_cloud">
-          	<h4>
-				Grass Cloud
-          	</h4>
-          	<p>
-				Grass Cloud is a grass type cloud introduced in Generation 1. Grass Cloud is a well balanced all rounder cloud that is easy to battle with! Grass Cloud is known to be very calm and leafs are known to be produced by Grass Cloud during it's attacks.
-          	</p>
-    	<br>
-        </div>
+            <a class="cloud" href="#" onclick="#">
+                <h4>
+                    Grass Cloud
+                </h4>
+                <img src="https://i.ibb.co/jvcncWy/Grass-Cloud.png" alt="grass_cloud">
+                <p>
+                    Grass Cloud is a grass type cloud introduced in Generation 1. Grass Cloud is a well balanced all rounder cloud that is easy to battle with! Grass Cloud is known to be very calm and leafs are known to be produced by Grass Cloud during it's attacks.
+                </p>
+                <br>
+                </div>
+            </a>
         <hr>
-        <div>
-        <br>
-            <!-- Image doesn't work. Either wrong src or app.yaml requires work -->
-        	<img src="Fire_Cloud.png" alt="fire_cloud">
-          	<h4>
-				Fire Cloud
-          	</h4>
-          	<p>
-				Fire Cloud is a fire type cloud introduced in Generation 1. Fire Cloud has a strong attack but is known to be weak on it's defense making Fire Cloud a tougher cloud to battle with. Fire Cloud is known to have temper issues and it brust into flames when threaten or agitated. Myths has been said that Fire Cloud is the first Cloud to be created.
-          	</p>
-    	<br>
-        </div>
+            <a class="cloud" href="#" onclick="#">
+                <div>
+                    <h4>
+                        Fire Cloud
+                    </h4>
+					<img src="https://i.ibb.co/Qb2FKSW/Fire-Cloud.png" alt="fire_cloud">
+                    <p>
+                        Fire Cloud is a fire type cloud introduced in Generation 1. Fire Cloud has a strong attack but is known to be weak on it's defense making Fire Cloud a tougher cloud to battle with. Fire Cloud is known to have temper issues and it brust into flames when threaten or agitated. Myths has been said that Fire Cloud is the first Cloud to be created.
+                    </p>
+                <br>
+                </div>
+            </a>
         <hr>
-        <div>
-        <br>
-            <!-- Image doesn't work. Either wrong src or app.yaml requires work -->
-        	<img src="Water_Cloud.png" alt="water_cloud">
-          	<h4>
-				Water Cloud
-          	</h4>
-          	<p>
-				Water Cloud is a water type cloud introduced in Generation 1. Water Cloud has a strong defense but falls behind in it's attacks making it a tanky and easy to use cloud to battle with. Water Cloud is known to be calm but when agitated, Water Cloud could release a monstrous rain.
-          	</p>  
-		<br>
+            <a class="cloud" href="#" onclick="#">
+                <div>
+                    <h4>
+                        Water Cloud
+                    </h4>
+                    <img src="https://i.ibb.co/PQ0VNmb/Water-Cloud.png" alt="water_cloud">
+                    <p>
+                        Water Cloud is a water type cloud introduced in Generation 1. Water Cloud has a strong defense but falls behind in it's attacks making it a tanky and easy to use cloud to battle with. Water Cloud is known to be calm but when agitated, Water Cloud could release a monstrous rain.
+                    </p>  
+                <br>
+            </a>
         </div>
-        	<select id="chosencloud" name="cloud">
+            <!-- Dropdown selection menu  -->
+        	<!-- <select id="chosencloud" name="cloud">
               <option value="Grass Cloud">Grass Cloud</option>
               <option value="Fire Cloud Cloud">Fire Cloud</option>
               <option value="Water Cloud">Water Cloud</option>
-    		</select>
-    	<br><br>
+    		</select> 
+    	<br><br> -->
     </div>
     <br><br>
 </body>
@@ -114,6 +115,15 @@ div[class=clouds] {
     padding: 15px;
     margin: auto;
   }
+  
+img {
+	width: 150px;
+}
+
+a[class=cloud] {
+    text-decoration: none;
+    color: white;
+}
   
 .topnav {
     overflow: hidden;
