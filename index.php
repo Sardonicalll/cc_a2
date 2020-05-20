@@ -30,6 +30,9 @@ $id3 = $datastore->key(user, 's37171842');
 $u1 = $datastore->lookup($id1);
 $u2 = $datastore->lookup($id2);
 $u3 = $datastore->lookup($id3);
+
+
+# This is for debugging existing users 
 //echo $u1['name'] . "   " . $u2['name'] . "   " . $u3['name'];
 
 
