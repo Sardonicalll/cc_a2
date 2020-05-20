@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <body onload="hide()">
 <!-- On the creation of the page, start the game canvas-->
-<canvas id="ctx" width="500" height="500" style="border:1px Solid #000000;"></canvas>
+<canvas id="ctx" width="500" height="500" style="border:2px Solid #FFF;"></canvas>
 <img id="b" src="https://i.ibb.co/2j095Yk/Sky.jpg" alt="background" width="500" height="500"> </img>
 <img id="f" src="https://i.ibb.co/Qb2FKSW/Fire-Cloud.png" alt="background" width="500" height="500"> </img>
 <img id="w" src="https://i.ibb.co/PQ0VNmb/Water-Cloud.png" alt="background" width="500" height="500"> </img>
@@ -13,8 +13,6 @@ var hideb = document.getElementById("b");
 var hidef = document.getElementById("f");
 var hidew = document.getElementById("w");
 var hideg = document.getElementById("g");
-
-
 
 if (hideb.style.display === "none") {
     hideb.style.display = "block";
@@ -223,7 +221,6 @@ if(enemy.name == "Grass"){
 var ecloud = document.getElementById("g");
 ctx.drawImage(ecloud, 300, 10, 150, 75);
 }
-
 }
 
 updateHp = function() { 
@@ -253,8 +250,6 @@ ctx.fillStyle = "#000000";
 ctx.fillRect(5,15,210,30)
 ctx.fillStyle = "#FF0000";
 ctx.fillRect(10,20,ebar,20)
-
-
 }
 
 updatebattle = function(){
@@ -412,7 +407,7 @@ y = 1;
 }
 
 var z = getRandomInt2(217,255);
-// Damage calculation (Using the pokemon algorythm)
+// Damage calculation (Using the pokemon algorithm)
 if(eIsDef = true) {
 pDam = ((((((((2*a)/5+2)*b*c)/d) + 2 ) *x*y/10)*z)/255) /2 ;
 }
@@ -495,18 +490,13 @@ eIsDef = true;
 
 }
 
-
-
-
-
-
 </script>
 </body>
-<div id="cloudPick" style="text-align:center;width:480px;">
-    <p> Pick a Cloud</p>
-    <button onclick="Fire()">Fire</button><br><br>
-    <button onclick="Water()">Water</button>
-    <button onclick="Grass()">Grass</button><br><br>
+<div id="cloudPick" style="font-size:20px;font-family:helvetica;text-align:center;width:480px;color:#FFF;">
+    <p>Choose a Cloud</p>
+    <button onclick="Fire()" style="border:2px solid #FF0000;">Fire</button><br><br>
+    <button onclick="Water()" style="border:2px solid #000FFF;">Water</button>
+    <button onclick="Grass()" style="border:2px solid #00FF00;">Grass</button><br><br>
 
   </div>
 <div style="text-align:center;width:480px;">
@@ -514,4 +504,21 @@ eIsDef = true;
     <button onclick="defend()">Defend</button>
 
   </div>
+  
+<style>
+body {
+	background-color: #333;
+}
+
+button {
+	background-color: #000000;
+    color: white;
+    padding: 8px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+</style>  
+
 </html>

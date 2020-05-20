@@ -26,8 +26,8 @@
         Choose your cloud!
     </h3>
     <div class="clouds">
-    	<div>
-            <a class="cloud" href="#" onclick="#">
+    	<a class="cloud" href="#" onclick="#">
+            <div>
                 <h4>
                     Grass Cloud
                 </h4>
@@ -62,8 +62,8 @@
                         Water Cloud is a water type cloud introduced in Generation 1. Water Cloud has a strong defense but falls behind in it's attacks making it a tanky and easy to use cloud to battle with. Water Cloud is known to be calm but when agitated, Water Cloud could release a monstrous rain.
                     </p>  
                 <br>
-            </a>
-        </div>
+            </div>
+        </a>
             <!-- Dropdown selection menu  -->
         	<!-- <select id="chosencloud" name="cloud">
               <option value="Grass Cloud">Grass Cloud</option>
