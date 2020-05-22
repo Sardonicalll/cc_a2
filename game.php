@@ -208,7 +208,7 @@ var ecloud = document.getElementById("f");
 ctx.drawImage(ecloud, 300, 10, 150, 150); 
 ctx.font = "20px Helvetica";
 ctx.fillStyle = "black";
-ctx.fillText ("Fire Cloud",10, 65);
+ctx.fillText ("Feral Fire Cloud",10, 65);
 }
 
 if(enemy.name == "Water"){
@@ -216,7 +216,7 @@ var ecloud = document.getElementById("w");
 ctx.drawImage(ecloud, 300, 10, 150, 150);
 ctx.font = "20px Helvetica";
 ctx.fillStyle = "black";
-ctx.fillText ("Water Cloud",10, 65);
+ctx.fillText ("Stormy Water Cloud",10, 65);
 }
 
 if(enemy.name == "Grass"){
@@ -224,7 +224,7 @@ var ecloud = document.getElementById("g");
 ctx.drawImage(ecloud, 300, 10, 150, 150);
 ctx.font = "20px Helvetica";
 ctx.fillStyle = "black";
-ctx.fillText ("Grass Cloud",10, 65);
+ctx.fillText ("Wild Grass Cloud",10, 65);
 }
 }
 
