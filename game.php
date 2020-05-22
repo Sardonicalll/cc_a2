@@ -188,7 +188,7 @@ ctx.fillRect(10,20,200,20)
 
 cloudDraw();
 }
-
+// Draw cloud name and display images
 cloudDraw = function() {
 if(player.name == "Fire") {
 var pcloud = document.getElementById("f");
@@ -205,17 +205,26 @@ ctx.drawImage(pcloud, 50, 340, 150, 150);
 
 if(enemy.name == "Fire"){
 var ecloud = document.getElementById("f");
-ctx.drawImage(ecloud, 300, 10, 150, 150);  
+ctx.drawImage(ecloud, 300, 10, 150, 150); 
+ctx.font = "20px Helvetica";
+ctx.fillStyle = "black";
+ctx.fillText ("Fire Cloud",10, 65);
 }
 
 if(enemy.name == "Water"){
 var ecloud = document.getElementById("w");
-ctx.drawImage(ecloud, 300, 10, 150, 150);   
+ctx.drawImage(ecloud, 300, 10, 150, 150);
+ctx.font = "20px Helvetica";
+ctx.fillStyle = "black";
+ctx.fillText ("Water Cloud",10, 65);
 }
 
 if(enemy.name == "Grass"){
 var ecloud = document.getElementById("g");
 ctx.drawImage(ecloud, 300, 10, 150, 150);
+ctx.font = "20px Helvetica";
+ctx.fillStyle = "black";
+ctx.fillText ("Grass Cloud",10, 65);
 }
 }
 
@@ -481,7 +490,6 @@ if(enemyAction == 1){
 console.log("the enemy chose to defend");
 eIsDef = true;    
 }
-
 }
 
 </script>
