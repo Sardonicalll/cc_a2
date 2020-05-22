@@ -11,7 +11,6 @@
     <div class="topnav">
         <a class="active" href="https://cloudcomp-a2.ts.r.appspot.com/main">Home</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/account">My Account</a>
-        <a href="https://cloudcomp-a2.ts.r.appspot.com/about">About</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/stats">Statistics</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/">Logout</a>
     </div>
@@ -22,7 +21,6 @@
 </header>
     <!-- Body -->
 <body>
-
     <p>
         Welcome to Cloud Battle Arena! A turn based RPG game which battles various cloud services.
     </p>
@@ -33,7 +31,7 @@
     	Fire Cloud, Grass Cloud and Water Cloud has been added into the game.
     </p>
     <br><br>
-    <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/selection">Battle Now!</a>
+    <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/game">Battle Now!</a>
 </body>
     <!-- Footer -->
 <footer>
@@ -103,7 +101,4 @@ footer {
     width: 100%;
   }
 </style>
-<?php
-
-?>
 </html>
