@@ -5,9 +5,6 @@ threadsafe: true
 handlers:
 
 - url: /
-  script: index.php
-
-- url: /login
   script: login.php
 
 - url: /register

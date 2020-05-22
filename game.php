@@ -1,4 +1,6 @@
 <!DOCTYPE html> 
+
+<!-- Body -->
 <body onload="hide()">
 <!-- On the creation of the page, start the game canvas-->
 <canvas id="ctx" width="500" height="500" style="border:2px Solid #FFF;"></canvas>
@@ -69,7 +71,6 @@ name:'N/A'
 };
 
 // Initialise Clouds
-
 var fireC = {
 hp: 39,
 maxhp: 39,
@@ -502,9 +503,8 @@ eIsDef = true;
 <div style="text-align:center;width:480px;">
     <button onclick="attack()">Attack</button><br><br>
     <button onclick="defend()">Defend</button>
-
-  </div>
-  
+</div>
+<!-- Style   -->
 <style>
 body {
 	background-color: #333;
