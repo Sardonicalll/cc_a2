@@ -2,14 +2,13 @@
 
 <!-- Body -->
 <body onload="hide()">
-<img id="cloudstats" src="https://i.ibb.co/y6jkpMG/Cloud-Stats.png" width="504"></img><br>
 <!-- On the creation of the page, start the game canvas-->
 <canvas id="ctx" width="500" height="500" style="border:2px Solid #FFF;"></canvas>
+<img id="cloudstats" src="https://i.ibb.co/n7YN3CR/Cloud-Stats2-02.png" height="504"></img>
 <img id="b" src="https://i.ibb.co/2j095Yk/Sky.jpg" alt="background" width="500" height="500"> </img>
 <img id="f" src="https://i.ibb.co/Qb2FKSW/Fire-Cloud.png" alt="background" width="500" height="500"> </img>
 <img id="w" src="https://i.ibb.co/PQ0VNmb/Water-Cloud.png" alt="background" width="500" height="500"> </img>
 <img id="g" src="https://i.ibb.co/jvcncWy/Grass-Cloud.png" alt="background" width="500" height="500"> </img>
-
 <script>
 hide = function(){
 var hideb = document.getElementById("b");
@@ -326,9 +325,7 @@ if(choice == 2){
     enemy.maxhp = grassC.maxhp;
     console.log("the enemy chose grass")
 }
-
 }
-
 
 // Sets the cloud choice buttons to invisible once they have been chosen
 hideButton = function(){
@@ -339,10 +336,6 @@ if (hide.style.display === "none") {
     hide.style.display = "none";
   }
 }
-
-
-
-
 
 function Fire() {
     console.log("You chose fire");
@@ -368,8 +361,6 @@ function Grass() {
     drawcanvas();
 
 }
-
-
 
 function attack() {
 var a = 5; 
@@ -428,8 +419,6 @@ function defend() {
 pIsDef = true;
 controller();
 }
-
-
 
 enemyturn = function() {
 // Enemy takes a random action     
