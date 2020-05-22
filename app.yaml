@@ -18,6 +18,3 @@ handlers:
 
 - url: /account
   script: account.php
-
-- url: /selection
-  script: selection.php

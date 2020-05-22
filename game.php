@@ -2,6 +2,7 @@
 
 <!-- Body -->
 <body onload="hide()">
+<img id="cloudstats" src="https://i.ibb.co/y6jkpMG/Cloud-Stats.png" width="504"></img><br>
 <!-- On the creation of the page, start the game canvas-->
 <canvas id="ctx" width="500" height="500" style="border:2px Solid #FFF;"></canvas>
 <img id="b" src="https://i.ibb.co/2j095Yk/Sky.jpg" alt="background" width="500" height="500"> </img>
