@@ -197,30 +197,30 @@ cloudDraw();
 cloudDraw = function() {
 if(player.name == "Fire") {
 var pcloud = document.getElementById("f");
-ctx.drawImage(pcloud, 10, 400, 150, 75);
+ctx.drawImage(pcloud, 10, 400, 150, 150);
 }
 if(player.name == "Water") {
 var pcloud = document.getElementById("w");
-ctx.drawImage(pcloud, 10, 400, 150, 75);   
+ctx.drawImage(pcloud, 10, 400, 150, 150);   
 }
 if(player.name == "Grass") {
 var pcloud = document.getElementById("g");
-ctx.drawImage(pcloud, 10, 400, 150, 75);   
+ctx.drawImage(pcloud, 10, 400, 150, 150);   
 }
 
 if(enemy.name == "Fire"){
 var ecloud = document.getElementById("f");
-ctx.drawImage(ecloud, 300, 10, 150, 75);  
+ctx.drawImage(ecloud, 300, 10, 150, 150);  
 }
 
 if(enemy.name == "Water"){
 var ecloud = document.getElementById("w");
-ctx.drawImage(ecloud, 300, 10, 150, 75);   
+ctx.drawImage(ecloud, 300, 10, 150, 150);   
 }
 
 if(enemy.name == "Grass"){
 var ecloud = document.getElementById("g");
-ctx.drawImage(ecloud, 300, 10, 150, 75);
+ctx.drawImage(ecloud, 300, 10, 150, 150);
 }
 }
 
