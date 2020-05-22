@@ -111,8 +111,6 @@ var pIsDef = false;
 var eIsAtt = false;
 var eIsDef = false;
 
-
-
 //--------------------------------------------------------------------------------------------------------------------
 
 
@@ -126,9 +124,6 @@ function getRandomInt2(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
-
-
-
 
 controller = function () {    
 enemyturn();
@@ -197,15 +192,15 @@ cloudDraw();
 cloudDraw = function() {
 if(player.name == "Fire") {
 var pcloud = document.getElementById("f");
-ctx.drawImage(pcloud, 10, 400, 150, 150);
+ctx.drawImage(pcloud, 50, 340, 150, 150);
 }
 if(player.name == "Water") {
 var pcloud = document.getElementById("w");
-ctx.drawImage(pcloud, 10, 400, 150, 150);   
+ctx.drawImage(pcloud, 50, 340, 150, 150);   
 }
 if(player.name == "Grass") {
 var pcloud = document.getElementById("g");
-ctx.drawImage(pcloud, 10, 400, 150, 150);   
+ctx.drawImage(pcloud, 50, 340, 150, 150);   
 }
 
 if(enemy.name == "Fire"){
@@ -258,8 +253,6 @@ updatebattle = function(){
     background();
     cloudDraw();
     updateHp();
-
-
 }
 
 // Called if player becomes this type, sets players stats
