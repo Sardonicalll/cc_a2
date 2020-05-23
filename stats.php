@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <!-- Tab Title -->
-<title>Main</title>
+<title>Leaderboards</title>
     <!-- Head containing stylesheet link -->
 <head>
     <link rel="mainSS" href="css/mainstyles.css">
@@ -17,21 +17,11 @@
 </nav>
     <!-- Header -->
 <header>
-    <h2>My Account</h2>
+    <h2>Cloud Battle Arena Leaderboards</h2>
 </header>
     <!-- Body -->
 <body>
-    <p>
-        Welcome to Cloud Battle Arena! A turn based RPG game which battles various cloud services.
-    </p>
-    <h3>
-        Latest Updates
-    </h3>
-	<p>
-    	Fire Cloud, Grass Cloud and Water Cloud has been added into the game.
-    </p>
-    <br><br>
-    <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/game">Battle Now!</a>
+
 </body>
     <!-- Footer -->
 <footer>
@@ -50,7 +40,9 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
     text-align: center;
+    background-color: #111;
   }
   
 a[class=gamebtn] {
@@ -101,7 +93,4 @@ footer {
     width: 100%;
   }
 </style>
-<?php
-
-?>
 </html>

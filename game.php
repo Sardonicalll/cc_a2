@@ -46,13 +46,7 @@ if (hideb.style.display === "none") {
 var ctx = document.getElementById("ctx").getContext("2d");
 ctx.font = "50px Verdana";
 
-
-
-
-
-// Initialise Variables --------------------------------------------------------------------------------------------
-
-
+// Initialise Variables 
 // Initialises player
 var player = {
 hp: 1,

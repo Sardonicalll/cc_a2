@@ -24,3 +24,6 @@ handlers:
 
 - url: /lose
   script: lose.php
+
+- url: /leaderboards
+  script: stats.php
