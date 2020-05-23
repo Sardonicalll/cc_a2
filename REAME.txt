@@ -1,0 +1,6 @@
+Caleb McCash - s3717184
+De Yie Lu - s3700032
+
+Cloud computing assignment 2
+A single player cloud based game, based on a battle arena concept with 'clouds' of various types battling.
+

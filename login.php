@@ -25,7 +25,7 @@ $pwordcorrect = false;
 $uid;
 $pword;
 
-$id1 = $datastore->key(account, $uid);
+$id1 = $datastore->key(account, 'id=5079418695319552');
 
 $user = $datastore->lookup($id1);
 
@@ -38,36 +38,36 @@ if (array_key_exists('uid', $_POST)) {
 
     if ($uid = $u1['name'] and $pword = $u1['password']) {
 
-        $_SESSION['user'] = $uid;
+        $_SESSION['uid'] = $uid;
         $_SESSION['profile'] = $u1;
         $_SESSION['id'] = 1;
         $pwordcorrect = true;
-        $_SESSION['password'] = $pword;
+        $_SESSION['pword'] = $pword;
         $pwordcorrect = true;
         echo "<script type='text/javascript'>window.top.location='https://cloudcomp-a2.ts.r.appspot.com/main';</script>";
         exit;
     } elseif ($uid == $u2['name'] and $pword == $u2['password']) {
 
         $idcorrect = true;
-        $_SESSION['user'] = $uid;
+        $_SESSION['uid'] = $uid;
         $_SESSION['profile'] = $u2;
         $_SESSION['id'] = 2;
         $pwordcorrect = true;
-        $_SESSION['password'] = $pword;
+        $_SESSION['pword'] = $pword;
         echo "<script type='text/javascript'>window.top.location='https://cloudcomp-a2.ts.r.appspot.com/main';</script>";
         exit;
     } elseif ($uid == $u3['name'] and  $pword == $u3['password']) {
 
         $idcorrect = true;
-        $_SESSION['user'] = $uid;
+        $_SESSION['uid'] = $uid;
         $_SESSION['profile'] = $u3;
         $pwordcorrect = true;
         $_SESSION['id'] = 3;
-        $_SESSION['password'] = $pword;
+        $_SESSION['pword'] = $pword;
         echo "<script type='text/javascript'>window.top.location='https://cloudcomp-a2.ts.r.appspot.com/main';</script>";
         exit;
     } else {
-        echo "User ID is wrong";
+        echo "User ID or password is incorrect";
     }
 }
 

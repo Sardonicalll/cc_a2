@@ -22,15 +22,17 @@
     <!-- Body -->
 <body>
     <?php
-    function list_tasks(DatastoreClient $datastore) {
-        $query = $datastore->query()
-            ->kind('account')
-            ->filter('uid')
-            ->filter('elo')
-            ->order('elo', Query::ORDER_ASCENDING);
-        return $datastore->runQuery($query);
-        echo $query;
-    }
+    // function list_tasks(DatastoreClient $datastore) {
+    //     $query = $datastore->query()
+    //         ->kind('account')
+    //         ->filter('uid')
+    //         ->filter('elo')
+    //         ->order('elo', Query::ORDER_ASCENDING);
+    //     $querysearch = $datastore->runQuery($query);
+    //     foreach ($querysearch as $topelo) {
+    //         echo $topelo['elo'];
+    //     }
+    // };
     ?>
 </body>
     <!-- Footer -->
