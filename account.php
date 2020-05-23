@@ -11,7 +11,7 @@
     <div class="topnav">
         <a href="https://cloudcomp-a2.ts.r.appspot.com/main">Home</a>
         <a class="active" href="https://cloudcomp-a2.ts.r.appspot.com/account">My Account</a>
-        <a href="https://cloudcomp-a2.ts.r.appspot.com/lboard">Leaderboard</a>
+        <a href="https://cloudcomp-a2.ts.r.appspot.com/leaderboards">Leaderboard</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/">Logout</a>
     </div>
 </nav>
@@ -27,7 +27,7 @@
     <br>
     Email:
     <br>
-    Elo rating:
+    Elo rating: 
     </p>
 </body>
     <!-- Footer -->

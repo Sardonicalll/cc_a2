@@ -11,7 +11,7 @@
     <div class="topnav">
         <a href="https://cloudcomp-a2.ts.r.appspot.com/main">Home</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/account">My Account</a>
-        <a class="active" href="https://cloudcomp-a2.ts.r.appspot.com/lboard">Leaderboard</a>
+        <a class="active" href="https://cloudcomp-a2.ts.r.appspot.com/leaderboards">Leaderboard</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/">Logout</a>
     </div>
 </nav>
@@ -21,7 +21,17 @@
 </header>
     <!-- Body -->
 <body>
-
+    <?php
+    function list_tasks(DatastoreClient $datastore) {
+        $query = $datastore->query()
+            ->kind('account')
+            ->filter('uid')
+            ->filter('elo')
+            ->order('elo', Query::ORDER_ASCENDING);
+        return $datastore->runQuery($query);
+        echo $query;
+    }
+    ?>
 </body>
     <!-- Footer -->
 <footer>

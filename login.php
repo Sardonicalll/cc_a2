@@ -25,13 +25,10 @@ $pwordcorrect = false;
 $uid;
 $pword;
 
-$id1 = $datastore->key(account, 's3717184');
-$id2 = $datastore->key(account, 's3700032');
-$id3 = $datastore->key(account, 's3765432');
+$id1 = $datastore->key(account, $uid);
 
-$u1 = $datastore->lookup($id1);
-$u2 = $datastore->lookup($id2);
-$u3 = $datastore->lookup($id3);
+$user = $datastore->lookup($id1);
+
 
 echo $uid . "       " . $pword;
 if (array_key_exists('uid', $_POST)) {
@@ -83,9 +80,9 @@ if ($idcorrect == true and $pwordcorrect == true) {
 
     <form method="post">
         <br>
-        <input type="text" id="uid" name="uid" placeholder="User ID"><br>
+        <input type="text" id="uid" name="uid" placeholder="User ID" required="required"><br>
         <br>
-        <input type="text" id="pword" name="pword" placeholder="Password"><br><br>
+        <input type="text" id="pword" name="pword" placeholder="Password" required="required"><br><br>
         <input type="submit" value="Submit">
     </form>
     <br><br>
