@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <!-- Tab Title -->
-<title>Main</title>
+<title>Cloud Battle Arena</title>
     <!-- Head containing stylesheet link -->
 <head>
     <link rel="mainSS" href="css/mainstyles.css">
@@ -29,7 +29,7 @@
         You have gained <?php ?> elo!
     </p>
     <br><br>
-    <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/game">Battle Now!</a>
+    <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/game">Battle Again!</a>
 </body>
     <!-- Footer -->
 <footer>

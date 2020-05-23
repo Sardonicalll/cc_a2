@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <!-- Tab Title -->
-<title>Main</title>
+<title>Cloud Battle Arena</title>
     <!-- Head containing stylesheet link -->
 <head>
     <link rel="mainSS" href="css/mainstyles.css">

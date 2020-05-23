@@ -1,8 +1,10 @@
 <!DOCTYPE html> 
 <html>
-<!-- Body -->
+    <!-- Tab Title -->
+<title>Cloud Battle Arena</title>
+    <!-- Body -->
 <body onload="hide()">
-<!-- On the creation of the page, start the game canvas-->
+    <!-- On the creation of the page, start the game canvas-->
 <canvas id="ctx" width="500" height="500" style="border:2px Solid #FFF;"></canvas>
 <img id="cloudstats" src="https://i.ibb.co/n7YN3CR/Cloud-Stats2-02.png" height="504"></img>
 <img id="b" src="https://i.ibb.co/2j095Yk/Sky.jpg" alt="background" width="500" height="500"> </img>
