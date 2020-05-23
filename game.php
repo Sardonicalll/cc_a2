@@ -129,11 +129,11 @@ resetconditions();
 
 if(player.hp <= 0){
     
-    window.top.location='https://cloudcomp-a2.ts.r.appspot.com/main';
+    window.top.location='https://cloudcomp-a2.ts.r.appspot.com/lose';
 }
 if(enemy.hp <= 0){
 
-window.top.location='https://cloudcomp-a2.ts.r.appspot.com/main';
+window.top.location='https://cloudcomp-a2.ts.r.appspot.com/win';
 }
 }
 

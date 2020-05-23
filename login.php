@@ -105,7 +105,7 @@ body {
 
 input[type=text] {
 	border: none;
-    border-bottom: 2px solid #1ad33d;
+    border-bottom: 2px solid #8900BF;
     padding: 12px 20px;
     font-size: 15px;
     color: #DDD;
@@ -114,7 +114,7 @@ input[type=text] {
 
 input[type=submit] {
     background-color: #000000;
-    border: 2px solid #1ad33d;
+    border: 2px solid #8900BF;
     color: white;
     padding: 8px 28px;
     text-align: center;

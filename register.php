@@ -33,18 +33,8 @@
     $datastore = new DatastoreClient([
         'projectId' => $projectId
     ]);
-    
-    $uid;
-    $pword;
-    $email;
-
-    $key = $datastore->key('account', 's3700032');
-    $task = $datastore->lookup($key);   
-
-    echo $key;
-    echo $task;
-    echo $pword;
 ?>
+
     <!-- Registration Form -->
     <form method="post">
         <input type="text" id="uid" name="uid" placeholder="Username" required="required">
@@ -53,8 +43,26 @@
         <br>
         <input type="text" id="pword" name="pword" placeholder="Password" required="required">
         <br><br>
-        <input type="submit" value="Create Account">
+        <?php
+            // Time function
+            $time = time();
+            $date = date('Y-m-d', $time);
+
+
+            // Insert new entity into datastore
+            $account = $datastore->entity('account', [
+                'uid' => uid,
+                'pword' => pword,
+                'email' => email,
+                'elo' => '100',
+                'created' => timestampvalue
+            ]);
+            $datastore->insert($account);  
+            
+        ?>
+        <input type="submit" value="Create Account"> 
     </form>
+
     <!-- Return to Login Button -->
     <br>
     Already have an account?
@@ -82,7 +90,7 @@ body {
 
 a {
 	background-color: #000000;
-    border: 2px solid #1ad33d;
+    border: 2px solid #8900BF;
     color: white;
     padding: 8px 28px;
     text-align: center;
@@ -92,18 +100,18 @@ a {
     font-family: helvetica;
 }
 
-input[type=key] {
+input[type=string] {
 	border: none;
-    border-bottom: 2px solid #1ad33d;
+    border-bottom: 2px solid #8900BF;
     padding: 12px 20px;
     font-size: 15px;
     color: #DDD;
     background-color: #000000;
 }
 
-input[type=integer] {
+input[type=text] {
 	border: none;
-    border-bottom: 2px solid #1ad33d;
+    border-bottom: 2px solid #8900BF;
     padding: 12px 20px;
     font-size: 15px;
     color: #DDD;
@@ -112,7 +120,7 @@ input[type=integer] {
 
 input[type=submit] {
     background-color: #000000;
-    border: 2px solid #1ad33d;
+    border: 2px solid #8900BF;
     color: white;
     padding: 8px 28px;
     text-align: center;
@@ -123,7 +131,7 @@ input[type=submit] {
 
 input[type=button] {
 	background-color: #000000;
-    border: 2px solid #1ad33d;
+    border: 2px solid #8900BF;
     color: white;
     padding: 8px 28px;
     text-align: center;
