@@ -16,15 +16,42 @@
 <body>
     <!-- PHP -->
 <?php
+    session_start();
 
+    putenv('s3700032 CC-d0ac9e92faf7.json');
+    
+    # Includes the autoloader for libraries installed with composer
+    require __DIR__ . '/vendor/autoload.php';
+    
+    # Imports the Google Cloud client library
+    use Google\Cloud\Datastore\DatastoreClient;
+    
+    # Your Google Cloud Platform project ID
+    $projectId = 'cloudcomp-a2';
+    
+    # Instantiates a client
+    $datastore = new DatastoreClient([
+        'projectId' => $projectId
+    ]);
+    
+    $uid;
+    $pword;
+    $email;
+
+    $key = $datastore->key('account', 's3700032');
+    $task = $datastore->lookup($key);   
+
+    echo $key;
+    echo $task;
+    echo $pword;
 ?>
     <!-- Registration Form -->
     <form method="post">
-        <input type="key" id="username" name="username" placeholder="Username">
+        <input type="text" id="uid" name="uid" placeholder="Username" required="required">
         <br>
-        <input type="key" id="email" name="email" placeholder="E-mail">
+        <input type="string" id="email" name="email" placeholder="E-mail" required="required">
         <br>
-        <input type="integer" id="password" name="password" placeholder="Password">
+        <input type="text" id="pword" name="pword" placeholder="Password" required="required">
         <br><br>
         <input type="submit" value="Create Account">
     </form>

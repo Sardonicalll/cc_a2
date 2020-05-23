@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-
+<html>
 <!-- Body -->
 <body onload="hide()">
 <!-- On the creation of the page, start the game canvas-->
@@ -509,6 +509,10 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
+}
+
+script {
+  text-align: center;
 }
 </style>  
 

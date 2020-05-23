@@ -9,7 +9,7 @@
     <!-- Navigation Menu -->
 <nav>
     <div class="topnav">
-        <a class="active" href="https://cloudcomp-a2.ts.r.appspot.com/main">Home</a>
+        <a href="https://cloudcomp-a2.ts.r.appspot.com/main">Home</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/account">My Account</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/stats">Statistics</a>
         <a href="https://cloudcomp-a2.ts.r.appspot.com/">Logout</a>
@@ -21,22 +21,15 @@
 </header>
     <!-- Body -->
 <body>
-    <p>
-        Welcome to Cloud Battle Arena 
-        <?
-        session_start();
-        echo  $_SESSION['user'];
-        ?>
-        ! A turn based RPG game which battles various cloud services.
-    </p>
     <h3>
-        Latest Updates
+        You lose :(
     </h3>
-	<p>
-    	Fire Cloud, Grass Cloud and Water Cloud has been added into the game.
+    <br><br>
+    <p>
+        You have lost <?php ?> elo!
     </p>
     <br><br>
-    <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/game">Battle Now!</a>
+    <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/game">Battle Again!</a>
 </body>
     <!-- Footer -->
 <footer>

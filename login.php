@@ -1,5 +1,7 @@
-<?PHP
+<!DOCTYPE html>
+<html>
 
+<?PHP
 session_start();
 
 putenv('s3700032 CC-d0ac9e92faf7.json');
@@ -23,14 +25,13 @@ $pwordcorrect = false;
 $uid;
 $pword;
 
-$id1 = $datastore->key(user, 's3717184');
-$id2 = $datastore->key(user, 's3700032');
-$id3 = $datastore->key(user, 's3765432');
+$id1 = $datastore->key(account, 's3717184');
+$id2 = $datastore->key(account, 's3700032');
+$id3 = $datastore->key(account, 's3765432');
 
 $u1 = $datastore->lookup($id1);
 $u2 = $datastore->lookup($id2);
 $u3 = $datastore->lookup($id3);
-//echo $u1['name'] . "   " . $u2['name'] . "   " . $u3['name'];
 
 echo $uid . "       " . $pword;
 if (array_key_exists('uid', $_POST)) {
@@ -76,6 +77,8 @@ if (array_key_exists('uid', $_POST)) {
 if ($idcorrect == true and $pwordcorrect == true) {
 }
 ?>
+
+<body>
     <h2>Login</h2>
 
     <form method="post">

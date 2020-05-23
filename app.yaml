@@ -18,3 +18,9 @@ handlers:
 
 - url: /account
   script: account.php
+
+- url: /win
+  script: win.php
+
+- url: /lose
+  script: lose.php
