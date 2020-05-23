@@ -27,6 +27,8 @@
     <br><br>
     <p>
         You have lost <?php ?> elo!
+        <br><br>
+        Current elo rating: <?php ?>
     </p>
     <br><br>
     <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/game">Battle Again!</a>

@@ -39,30 +39,32 @@
     <form method="post">
         <input type="text" id="uid" name="uid" placeholder="Username" required="required">
         <br>
-        <input type="string" id="email" name="email" placeholder="E-mail" required="required">
+        <input type="email" id="email" name="email" placeholder="E-mail" required="required">
         <br>
         <input type="text" id="pword" name="pword" placeholder="Password" required="required">
         <br><br>
         <?php
-            // Time function
+            
+            $email = "";
+            $uid = "";
+            $pword = "";
+
+            // Date function
             $time = time();
             $date = date('Y-m-d', $time);
 
-
             // Insert new entity into datastore
             $account = $datastore->entity('account', [
-                'uid' => uid,
-                'pword' => pword,
-                'email' => email,
+                'uid' => $_POST['uid'],
+                'pword' => $_POST['pword'],
+                'email' => $_POST['email'],
                 'elo' => '100',
-                'created' => timestampvalue
+                'created' => $date
             ]);
-            $datastore->insert($account);  
-            
+            $datastore->insert($account);
         ?>
-        <input type="submit" value="Create Account"> 
+        <input type="submit" value="Create Account" href="https://cloudcomp-a2.ts.r.appspot.com/"> 
     </form>
-
     <!-- Return to Login Button -->
     <br>
     Already have an account?
@@ -100,7 +102,7 @@ a {
     font-family: helvetica;
 }
 
-input[type=string] {
+input[type=email] {
 	border: none;
     border-bottom: 2px solid #8900BF;
     padding: 12px 20px;
