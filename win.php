@@ -47,20 +47,20 @@
 <?php 
 
 
-// Sets up the transaction
-$transaction = $datastore->transaction();
+// // Sets up the transaction
+// $transaction = $datastore->transaction();
 
-// Retrieves user data from datastore
-$key = $datastore->key('acc', '1234');
-$User = $transaction->lookup($key);
+// // Retrieves user data from datastore
+// $key = $datastore->key('acc', '1234');
+// $User = $transaction->lookup($key);
 
-// On a win, increase elo by 20
-$User['elo'] = $User['elo'] + 20;
+// // On a win, increase elo by 20
+// $User['elo'] = $User['elo'] + 20;
 
-// Update the elo rating
-$transaction->update($user);
-// Commit it to the cloud
-$transaction->commit();
+// // Update the elo rating
+// $transaction->update($user);
+// // Commit it to the cloud
+// $transaction->commit();
 
 ?>
     <h3>
@@ -70,7 +70,10 @@ $transaction->commit();
     <p>
         You have gained +20 elo!
         <br><br>
-        Current elo rating: <?php echo $User['elo']; ?>
+        Current elo rating: 
+        <?php 
+        echo $User['elo']; 
+        ?>
     </p>
 
 <?php 
@@ -94,7 +97,7 @@ $transaction->commit();
 
 
     <br><br>
-    <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/game">Battle Again!</a>
+    <a class="gamebtn" href="https://www.cloudbattlearena.com/game">Battle Again!</a>
 </body>
     <!-- Footer -->
 <footer>

@@ -10,7 +10,7 @@
 <nav>
     <div class="topnav">
         <a class="active" href="hhttps://www.cloudbattlearena.com/main">Home</a>
-        <a href="https://www.cloudbattlearena.comaccount">My Account</a>
+        <a href="https://www.cloudbattlearena.com/account">My Account</a>
         <a href="https://www.cloudbattlearena.com/leaderboards">Leaderboard</a>
         <a href="https://www.cloudbattlearena.com/">Logout</a>
     </div>
