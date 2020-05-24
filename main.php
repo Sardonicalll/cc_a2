@@ -36,7 +36,7 @@
     	Fire Cloud, Grass Cloud and Water Cloud has been added into the game.
     </p>
     <br><br>
-    <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/game">Battle Now!</a>
+    <a class="gamebtn" href="http://www.cloudbattlearena.com/game">Battle Now!</a>
 </body>
     <!-- Footer -->
 <footer>

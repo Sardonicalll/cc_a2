@@ -63,13 +63,13 @@
             ]);
             $datastore->insert($account);
         ?>
-        <input type="submit" value="Create Account" href="https://cloudcomp-a2.ts.r.appspot.com/"> 
+        <input type="submit" value="Create Account" href="http://www.cloudbattlearena.com"> 
     </form>
     <!-- Return to Login Button -->
     <br>
     Already have an account?
     <br><br>
-    <a class="loginbtn" href="https://cloudcomp-a2.ts.r.appspot.com/">Return to Login Page</a>
+    <a class="loginbtn" href="http://www.cloudbattlearena.com">Return to Login Page</a>
     <br><br>
 </body>
     <!-- Footer -->
