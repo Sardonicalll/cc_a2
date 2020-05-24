@@ -44,35 +44,15 @@ if (array_key_exists('uid', $_POST)) {
         $pwordcorrect = true;
         $_SESSION['pword'] = $pword;
         $pwordcorrect = true;
-        echo "<script type='text/javascript'>window.top.location='https://cloudcomp-a2.ts.r.appspot.com/main';</script>";
+        echo "<script type='text/javascript'>window.top.location='http://www.cloudbattlearena.com/main';</script>";
         exit;
-    } elseif ($uid == $u2['name'] and $pword == $u2['password']) {
-
-        $idcorrect = true;
-        $_SESSION['uid'] = $uid;
-        $_SESSION['profile'] = $u2;
-        $_SESSION['id'] = 2;
-        $pwordcorrect = true;
-        $_SESSION['pword'] = $pword;
-        echo "<script type='text/javascript'>window.top.location='https://cloudcomp-a2.ts.r.appspot.com/main';</script>";
-        exit;
-    } elseif ($uid == $u3['name'] and  $pword == $u3['password']) {
-
-        $idcorrect = true;
-        $_SESSION['uid'] = $uid;
-        $_SESSION['profile'] = $u3;
-        $pwordcorrect = true;
-        $_SESSION['id'] = 3;
-        $_SESSION['pword'] = $pword;
-        echo "<script type='text/javascript'>window.top.location='https://cloudcomp-a2.ts.r.appspot.com/main';</script>";
-        exit;
-    } else {
-        echo "User ID or password is incorrect";
-    }
+    } 
 }
+
 
 if ($idcorrect == true and $pwordcorrect == true) {
 }
+
 ?>
 
 <body>
@@ -87,7 +67,7 @@ if ($idcorrect == true and $pwordcorrect == true) {
     </form>
     <br><br>
     Not a member yet? Create an account
-    <a class="herebtn" href="https://cloudcomp-a2.ts.r.appspot.com/register">here</a>!
+    <a class="herebtn" href="http://www.cloudbattlearena.com/register">here</a>!
 
 </body>
 
