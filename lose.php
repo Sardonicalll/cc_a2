@@ -66,8 +66,11 @@
     <br><br>
     <p>
         You have lost -20 elo!
-        <br><br>
-        Current elo rating:  <?php echo $User['elo']; ?>
+        <!-- <br><br>
+        Current elo rating:  
+        <?php 
+        echo $User['elo']; 
+        ?> -->
     </p>
     <br><br>
     <a class="gamebtn" href="https://www.cloudbattlearena.com/game">Battle Again!</a>

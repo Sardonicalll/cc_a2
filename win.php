@@ -46,7 +46,6 @@
 
 <?php 
 
-
 // // Sets up the transaction
 // $transaction = $datastore->transaction();
 
@@ -69,32 +68,12 @@
     <br><br>
     <p>
         You have gained +20 elo!
-        <br><br>
+        <!-- <br><br>
         Current elo rating: 
         <?php 
         echo $User['elo']; 
-        ?>
+        ?> -->
     </p>
-
-<?php 
-
-// Sets up the transaction
-$transaction = $datastore->transaction();
-
-// Retrieves user data from datastore
-$key = $datastore->key('acc', '1234');
-$User = $transaction->lookup($key);
-
-// On a win, increase elo by 20
-$task['elo'] = $task['elo'] + 20;
-
-// Update the elo rating
-$transaction->update($user);
-// Commit it to the cloud
-$transaction->commit();
-
-?>
-
 
     <br><br>
     <a class="gamebtn" href="https://www.cloudbattlearena.com/game">Battle Again!</a>
