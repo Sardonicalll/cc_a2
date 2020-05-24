@@ -6,11 +6,11 @@
 <body onload="hide()">
     <!-- On the creation of the page, start the game canvas-->
 <canvas id="ctx" width="500" height="500" style="border:2px Solid #FFF;"></canvas>
-<img id="cloudstats" src="https://i.ibb.co/n7YN3CR/Cloud-Stats2-02.png" height="504"></img>
-<img id="b" src="https://i.ibb.co/2j095Yk/Sky.jpg" alt="background" width="500" height="500"> </img>
-<img id="f" src="https://i.ibb.co/Qb2FKSW/Fire-Cloud.png" alt="background" width="500" height="500"> </img>
-<img id="w" src="https://i.ibb.co/PQ0VNmb/Water-Cloud.png" alt="background" width="500" height="500"> </img>
-<img id="g" src="https://i.ibb.co/jvcncWy/Grass-Cloud.png" alt="background" width="500" height="500"> </img>
+<img id="cloudstats" src="https://storage.cloud.google.com/cloudbattle-storage/Cloud_Stats2-02.png" height="504"></img>
+<img id="b" src="https://storage.cloud.google.com/cloudbattle-storage/Sky.jpg" alt="background" width="500" height="500"> </img>
+<img id="f" src="https://storage.cloud.google.com/cloudbattle-storage/Fire-Cloud.png" alt="background" width="500" height="500"> </img>
+<img id="w" src="https://storage.cloud.google.com/cloudbattle-storage/Water-Cloud.png" alt="background" width="500" height="500"> </img>
+<img id="g" src="https://storage.cloud.google.com/cloudbattle-storage/Grass-Cloud.png" alt="background" width="500" height="500"> </img>
 <script>
 hide = function(){
 var hideb = document.getElementById("b");
@@ -129,7 +129,18 @@ resetconditions();
 
 if(player.hp <= 0){
     
-    window.top.location='https://cloudcomp-a2.ts.r.appspot.com/lose';
+  window.top.location='https://cloudcomp-a2.ts.r.appspot.com/lose';
+  
+  // Update player's ELO
+  <?php
+    $transaction = $datastore->transaction();
+    $key = $datastore->key('Task', 'sampleTask');
+    $task = $transaction->lookup($key);
+    $task['priority'] = 5;
+    $transaction->update($task);
+    $transaction->commit();
+  ?>
+
 }
 if(enemy.hp <= 0){
 

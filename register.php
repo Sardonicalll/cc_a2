@@ -44,7 +44,6 @@
         <input type="text" id="pword" name="pword" placeholder="Password" required="required">
         <br><br>
         <?php
-            
             $email = "";
             $uid = "";
             $pword = "";
@@ -63,7 +62,7 @@
             ]);
             $datastore->insert($account);
         ?>
-        <input type="submit" value="Create Account" href="https://cloudcomp-a2.ts.r.appspot.com/"> 
+        <input type="submit" value="Create Account"> 
     </form>
     <!-- Return to Login Button -->
     <br>

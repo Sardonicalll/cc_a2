@@ -2,8 +2,10 @@ runtime: php55
 api_version: 1
 threadsafe: true
 
-handlers:
+env_variables:
+  GOOGLE_STORAGE_BUCKET: cloudbattle-storage
 
+handlers:
 - url: /
   script: login.php
 
@@ -27,3 +29,4 @@ handlers:
 
 - url: /leaderboards
   script: leaderboards.php
+
