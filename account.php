@@ -9,7 +9,7 @@
     <!-- Navigation Menu -->
 <nav>
     <div class="topnav">
-        <a href="https://www.cloudbattlearena.com.com/main">Home</a>
+        <a href="https://www.cloudbattlearena.com/main">Home</a>
         <a class="active" href="https://www.cloudbattlearena.com/account">My Account</a>
         <a href="https://www.cloudbattlearena.com/leaderboards">Leaderboard</a>
         <a href="https://www.cloudbattlearena.com/">Logout</a>

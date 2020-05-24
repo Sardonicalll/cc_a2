@@ -31,10 +31,10 @@
     <!-- Navigation Menu -->
 <nav>
     <div class="topnav">
-        <a href="https://cloudcomp-a2.ts.r.appspot.com/main">Home</a>
-        <a href="https://cloudcomp-a2.ts.r.appspot.com/account">My Account</a>
-        <a href="https://cloudcomp-a2.ts.r.appspot.com/leaderboards">Leaderboard</a>
-        <a href="https://cloudcomp-a2.ts.r.appspot.com/">Logout</a>
+    <a href="https://www.cloudbattlearena.com/main">Home</a>
+        <a href="https://www.cloudbattlearena.com/account">My Account</a>
+        <a href="https://www.cloudbattlearena.com/leaderboards">Leaderboard</a>
+        <a href="https://www.cloudbattlearena.com/">Logout</a>
     </div>
 </nav>
     <!-- Header -->
@@ -147,7 +147,7 @@ footer {
 </style>
 
 <?php
-    echo "<script type='text/javascript'>window.top.location='http://www.cloudbattlearena.com/main';</script>";
+    // echo "<script type='text/javascript'>window.top.location='http://www.cloudbattlearena.com/main';</script>";
 ?>
 
 </html>
