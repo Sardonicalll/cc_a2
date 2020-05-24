@@ -25,9 +25,13 @@ $pwordcorrect = false;
 $uid;
 $pword;
 
-$id1 = $datastore->key(account, 'id=5079418695319552');
+  $id1 = $datastore->key(account, 'id=5079418695319552');
+  $id2 = $datastore->key(account, 'id=5706627130851328');
+  $id3 = $datastore->key(account, 'id=6200426164649984');
 
-$user = $datastore->lookup($id1);
+  $u1 = $datastore->lookup($id1);
+  $u2 = $datastore->lookup($id2);
+  $u3 = $datastore->lookup($id3);
 
 
 echo $uid . "       " . $pword;
@@ -44,15 +48,35 @@ if (array_key_exists('uid', $_POST)) {
         $pwordcorrect = true;
         $_SESSION['pword'] = $pword;
         $pwordcorrect = true;
-        // echo "<script type='text/javascript'>window.top.location='http://www.cloudbattlearena.com/main';</script>";
+        echo "<script type='text/javascript'>window.top.location='https://www.cloudbattlearena.com/main';</script>";
         exit;
-    } 
-}
+    } elseif ($uid == $u2['name'] and $pword == $u2['password']) {
 
+        $idcorrect = true;
+        $_SESSION['uid'] = $uid;
+        $_SESSION['profile'] = $u2;
+        $_SESSION['id'] = 2;
+        $pwordcorrect = true;
+        $_SESSION['pword'] = $pword;
+        echo "<script type='text/javascript'>window.top.location='https://www.cloudbattlearena.com/main';</script>";
+        exit;
+    } elseif ($uid == $u3['name'] and  $pword == $u3['password']) {
+
+        $idcorrect = true;
+        $_SESSION['uid'] = $uid;
+        $_SESSION['profile'] = $u3;
+        $pwordcorrect = true;
+        $_SESSION['id'] = 3;
+        $_SESSION['pword'] = $pword;
+        echo "<script type='text/javascript'>window.top.location='https://www.cloudbattlearena.com/main';</script>";
+        exit;
+    } else {
+        echo "User ID or password is incorrect";
+    }
+}
 
 if ($idcorrect == true and $pwordcorrect == true) {
 }
-
 ?>
 
 <body>
@@ -60,14 +84,14 @@ if ($idcorrect == true and $pwordcorrect == true) {
 
     <form method="post">
         <br>
-        <input type="text" id="uid" name="uid" placeholder="User ID" required="required"><br>
+        <input type="text" id="uid" name="uid" placeholder="User ID"><br>
         <br>
-        <input type="text" id="pword" name="pword" placeholder="Password" required="required"><br><br>
-        <input type="submit" value="Submit" href="http://www.cloudbattlearena.com/main">
+        <input type="text" id="password" name="password" placeholder="Password"><br><br>
+        <input type="submit" value="Submit">
     </form>
     <br><br>
     Not a member yet? Create an account
-    <a class="herebtn" href="http://www.cloudbattlearena.com/register">here</a>!
+    <a class="herebtn" href="https://www.cloudbattlearena.com/register">here</a>!
 
 </body>
 
