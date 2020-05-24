@@ -26,4 +26,4 @@ handlers:
   script: lose.php
 
 - url: /leaderboards
-  script: stats.php
+  script: leaderboards.php

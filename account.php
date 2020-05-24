@@ -22,6 +22,21 @@
     <!-- Body -->
 <body>
     <!-- Need to add in PHP here to retrieve entity and echo out for each part -->
+    <?php
+    function batch_lookup(DatastoreClient $datastore, array $keys)
+    {
+        // [START datastore_batch_lookup]
+        $result = $datastore->lookupBatch($keys);
+        if (isset($result['account'])) {
+            // $result['account'] is an array of entities.
+        } else {
+            // No entities found.
+        }
+        // [END datastore_batch_lookup]
+        return $result;
+    }
+    echo $result;
+    ?>
     <p>
     Username:
     <br>
