@@ -45,8 +45,6 @@
 <body>
 
 <?php 
-
-
 // Sets up the transaction
 $transaction = $datastore->transaction();
 
@@ -61,7 +59,6 @@ $User['elo'] = $User['elo'] - 20;
 $transaction->update($user);
 // Commit it to the cloud
 $transaction->commit();
-
 ?>
     <h3>
         You lose :(
@@ -72,11 +69,6 @@ $transaction->commit();
         <br><br>
         Current elo rating:  <?php echo $User['elo']; ?>
     </p>
-
-
-
-
-
     <br><br>
     <a class="gamebtn" href="https://cloudcomp-a2.ts.r.appspot.com/game">Battle Again!</a>
 </body>
@@ -150,4 +142,9 @@ footer {
     width: 100%;
   }
 </style>
+
+<?php
+    echo "<script type='text/javascript'>window.top.location='http://www.cloudbattlearena.com/main';</script>";
+?>
+
 </html>

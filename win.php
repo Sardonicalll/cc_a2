@@ -75,7 +75,6 @@ $transaction->commit();
 
 <?php 
 
-
 // Sets up the transaction
 $transaction = $datastore->transaction();
 
@@ -167,4 +166,9 @@ footer {
     width: 100%;
   }
 </style>
+
+<?php
+    echo "<script type='text/javascript'>window.top.location='http://www.cloudbattlearena.com/main';</script>";
+?>
+
 </html>
