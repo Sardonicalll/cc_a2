@@ -129,22 +129,11 @@ resetconditions();
 
 if(player.hp <= 0){
     
-  window.top.location='https://cloudcomp-a2.ts.r.appspot.com/lose';
-  
-  // Update player's ELO
-  <?php
-    $transaction = $datastore->transaction();
-    $key = $datastore->key('Task', 'sampleTask');
-    $task = $transaction->lookup($key);
-    $task['priority'] = 5;
-    $transaction->update($task);
-    $transaction->commit();
-  ?>
-
+    window.top.location='https://www.cloudbattlearena.com/lose';
 }
 if(enemy.hp <= 0){
 
-window.top.location='https://cloudcomp-a2.ts.r.appspot.com/win';
+window.top.location='https://www.cloudbattlearena.com/win';
 }
 }
 

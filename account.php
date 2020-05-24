@@ -9,10 +9,10 @@
     <!-- Navigation Menu -->
 <nav>
     <div class="topnav">
-        <a href="https://cloudcomp-a2.ts.r.appspot.com/main">Home</a>
-        <a class="active" href="https://cloudcomp-a2.ts.r.appspot.com/account">My Account</a>
-        <a href="https://cloudcomp-a2.ts.r.appspot.com/leaderboards">Leaderboard</a>
-        <a href="https://cloudcomp-a2.ts.r.appspot.com/">Logout</a>
+        <a href="https://www.cloudbattlearena.com.com/main">Home</a>
+        <a class="active" href="https://www.cloudbattlearena.com/account">My Account</a>
+        <a href="https://www.cloudbattlearena.com/leaderboards">Leaderboard</a>
+        <a href="https://www.cloudbattlearena.com/">Logout</a>
     </div>
 </nav>
     <!-- Header -->
