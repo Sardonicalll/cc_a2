@@ -44,7 +44,7 @@ if (array_key_exists('uid', $_POST)) {
         $pwordcorrect = true;
         $_SESSION['pword'] = $pword;
         $pwordcorrect = true;
-        echo "<script type='text/javascript'>window.top.location='http://www.cloudbattlearena.com/main';</script>";
+        // echo "<script type='text/javascript'>window.top.location='http://www.cloudbattlearena.com/main';</script>";
         exit;
     } 
 }
@@ -63,7 +63,7 @@ if ($idcorrect == true and $pwordcorrect == true) {
         <input type="text" id="uid" name="uid" placeholder="User ID" required="required"><br>
         <br>
         <input type="text" id="pword" name="pword" placeholder="Password" required="required"><br><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" href="http://www.cloudbattlearena.com/main">
     </form>
     <br><br>
     Not a member yet? Create an account
